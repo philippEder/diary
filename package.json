@@ -1,0 +1,13 @@
+{
+  "name": "personaldiary",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "mysql": "*",
+    "express": "~4.14.1",
+    "body-parser": "latest"
+  }
+}

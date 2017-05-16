@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diary</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="../js/Com.js"></script>
+    <script src="../js/Util.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../frontend/css/basic.css">
+</head>
+<body>
+
+<!--<div id="header" class="header"></div>-->
+<div id="content" class="content">
+    <h1>Tell your Diary!</h1>
+    <form>
+
+        <textarea id="entry" rows="5" placeholder="Write a new Entry to your personal Diary..."></textarea> <br/>
+        <button id="submitButton" type="button" onclick="sendEntryPost()">Submit</button>
+    </form>
+
+    <hr>
+
+    <div id="entries" class="entries"></div>
+    <button id="moreButton" onclick="getEntries()" type="button">more..</button>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        getEntries();
+        initBackToTopButton();
+    });
+</script>
+
+
+</body>
+</html>
